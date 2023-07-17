@@ -15,7 +15,7 @@ struct ImageSliderView: View {
         ZStack(alignment: .bottomLeading) {
             Image(sliderImagesList[currentIndex])
                 .resizable()
-                .frame(width: UIScreen.main.bounds.width * 0.9, height: 180)
+                .frame(width: UIScreen.main.bounds.width - 32, height: 210)
                 .cornerRadius(12)
             HStack {
                 ForEach(0..<sliderImagesList.count, id: \.self) { index in
@@ -24,8 +24,9 @@ struct ImageSliderView: View {
                         .frame(width: 10, height: 10)
                 }
             }.padding()
-        }.onAppear {
-            Timer.scheduledTimer(withTimeInterval: 2, repeats: true) { timer in
+        }
+        .onAppear {
+            Timer.scheduledTimer(withTimeInterval: 4, repeats: true) { timer in
                 if (currentIndex + 1 == sliderImagesList.count) {
                     currentIndex = 0
                 } else {
@@ -33,6 +34,7 @@ struct ImageSliderView: View {
                 }
             }
         }
+        .padding()
     }
 }
 

@@ -22,5 +22,4 @@ var productsList = [
     Product(name: "Gray Couch", image: "furniture_3", description: "", supplier: "Home Depo", price: 12.23),
     Product(name: "Beautiful Couch", image: "furniture_4", description: "", supplier: "Walmart", price: 12.23),
     Product(name: "Outdoor Couch", image: "furniture_5", description: "", supplier: "IKEA", price: 12.23),
-    Product(name: "Green Couch", image: "furniture_6x", description: "", supplier: "Home Depo", price: 12.23),
 ]

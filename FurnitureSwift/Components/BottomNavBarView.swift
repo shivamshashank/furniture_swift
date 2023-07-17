@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct BottomNavBarView: View {
+    @EnvironmentObject var cartManager: CartManager
+    
     init() {
         UITabBar.appearance().backgroundColor = UIColor(Color("kSecondary"))
     }
@@ -15,6 +17,7 @@ struct BottomNavBarView: View {
     var body: some View {
         TabView {
             HomeView()
+                .environmentObject(cartManager)
                 .tabItem {
                     Image(systemName: "house")
                     Text("House")
@@ -47,5 +50,6 @@ struct BottomNavBarView: View {
 struct BottomNavBarView_Previews: PreviewProvider {
     static var previews: some View {
         BottomNavBarView()
+            .environmentObject(CartManager())
     }
 }
