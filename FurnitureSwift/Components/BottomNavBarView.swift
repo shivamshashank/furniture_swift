@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct CustomBottomNavBar: View {
+struct BottomNavBarView: View {
     init() {
         UITabBar.appearance().backgroundColor = UIColor(Color("kSecondary"))
     }
@@ -44,8 +44,8 @@ struct CustomBottomNavBar: View {
     }
 }
 
-struct CustomBottomNavBar_Previews: PreviewProvider {
+struct BottomNavBarView_Previews: PreviewProvider {
     static var previews: some View {
-        CustomBottomNavBar()
+        BottomNavBarView()
     }
 }
