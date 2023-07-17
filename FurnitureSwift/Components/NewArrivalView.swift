@@ -17,6 +17,7 @@ struct NewArrivalView: View {
             Spacer()
             
             Image(systemName: "circle.grid.2x2.fill")
+                .resizable()
                 .foregroundColor(Color("kPrimary"))
                 .frame(width: 24, height: 24)
         }

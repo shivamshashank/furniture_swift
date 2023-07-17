@@ -11,8 +11,10 @@ struct ContentView: View {
     @StateObject var cartManager = CartManager()
     
     var body: some View {
-        BottomNavBarView()
-            .environmentObject(cartManager)
+        NavigationView {
+            BottomNavBarView()
+                .environmentObject(cartManager)
+        }
     }
 }
 

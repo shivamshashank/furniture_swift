@@ -13,15 +13,16 @@ struct CartButtonView: View {
     var body: some View {
         ZStack(alignment: .topTrailing) {
             Image(systemName: "bag.fill")
+                .resizable()
                 .frame(width: 24, height: 24)
                 .foregroundColor(.black)
-                .padding(2)
+                .padding(6)
             
             if numberOfProducts > 0 {
                 Text("\(numberOfProducts)")
                     .font(.caption2)
                     .foregroundColor(.white)
-                    .frame(width: 14, height: 14)
+                    .frame(width: 18, height: 18)
                     .background(.green)
                     .clipShape(Circle())
             }

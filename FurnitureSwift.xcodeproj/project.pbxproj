@@ -28,6 +28,9 @@
 		43CCDFBC2A647CA600950AF0 /* FurnitureSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43CCDFBB2A647CA600950AF0 /* FurnitureSwiftTests.swift */; };
 		43CCDFC62A647CA600950AF0 /* FurnitureSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43CCDFC52A647CA600950AF0 /* FurnitureSwiftUITests.swift */; };
 		43CCDFC82A647CA600950AF0 /* FurnitureSwiftUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43CCDFC72A647CA600950AF0 /* FurnitureSwiftUITestsLaunchTests.swift */; };
+		43D48AE52A653A11005C8A33 /* CartProductView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D48AE42A653A11005C8A33 /* CartProductView.swift */; };
+		43D48AE82A6555CE005C8A33 /* PaymentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D48AE72A6555CE005C8A33 /* PaymentHandler.swift */; };
+		43D48AEA2A655617005C8A33 /* PaymentButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D48AE92A655617005C8A33 /* PaymentButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +76,9 @@
 		43CCDFC12A647CA600950AF0 /* FurnitureSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FurnitureSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		43CCDFC52A647CA600950AF0 /* FurnitureSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FurnitureSwiftUITests.swift; sourceTree = "<group>"; };
 		43CCDFC72A647CA600950AF0 /* FurnitureSwiftUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FurnitureSwiftUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		43D48AE42A653A11005C8A33 /* CartProductView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartProductView.swift; sourceTree = "<group>"; };
+		43D48AE72A6555CE005C8A33 /* PaymentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentHandler.swift; sourceTree = "<group>"; };
+		43D48AE92A655617005C8A33 /* PaymentButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +129,8 @@
 				435AB4A32A65151A000B6C61 /* CartButtonView.swift */,
 				435AB4A52A65191A000B6C61 /* HomeHeaderView.swift */,
 				435AB4A72A65226D000B6C61 /* NewArrivalView.swift */,
+				43D48AE42A653A11005C8A33 /* CartProductView.swift */,
+				43D48AE92A655617005C8A33 /* PaymentButton.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -162,10 +170,10 @@
 				43BD21702A64DB4D00EB678B /* Components */,
 				43BD21732A64E4B300EB678B /* Models */,
 				43BD21652A64DAFC00EB678B /* Views */,
+				43D48AE62A6555B9005C8A33 /* Utils */,
 				43CCDFAD2A647CA500950AF0 /* Assets.xcassets */,
 				43CCDFAF2A647CA500950AF0 /* FurnitureSwift.entitlements */,
 				43CCDFB02A647CA500950AF0 /* Preview Content */,
-				435AB49F2A64FE72000B6C61 /* CartManager.swift */,
 			);
 			path = FurnitureSwift;
 			sourceTree = "<group>";
@@ -193,6 +201,15 @@
 				43CCDFC72A647CA600950AF0 /* FurnitureSwiftUITestsLaunchTests.swift */,
 			);
 			path = FurnitureSwiftUITests;
+			sourceTree = "<group>";
+		};
+		43D48AE62A6555B9005C8A33 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				435AB49F2A64FE72000B6C61 /* CartManager.swift */,
+				43D48AE72A6555CE005C8A33 /* PaymentHandler.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -333,10 +350,13 @@
 				435AB4A82A65226D000B6C61 /* NewArrivalView.swift in Sources */,
 				43BD216B2A64DB3100EB678B /* NotificationsView.swift in Sources */,
 				435AB4A62A65191A000B6C61 /* HomeHeaderView.swift in Sources */,
+				43D48AE52A653A11005C8A33 /* CartProductView.swift in Sources */,
+				43D48AEA2A655617005C8A33 /* PaymentButton.swift in Sources */,
 				43BD21672A64DB1900EB678B /* HomeView.swift in Sources */,
 				43CCDFAC2A647CA500950AF0 /* ContentView.swift in Sources */,
 				43BD21722A64DB7000EB678B /* BottomNavBarView.swift in Sources */,
 				43BD216F2A64DB4100EB678B /* ProfileView.swift in Sources */,
+				43D48AE82A6555CE005C8A33 /* PaymentHandler.swift in Sources */,
 				43CCDFAA2A647CA500950AF0 /* FurnitureSwiftApp.swift in Sources */,
 				43BD21772A64E7B000EB678B /* ImageSliderView.swift in Sources */,
 				435AB4A22A64FFDD000B6C61 /* ProductCardView.swift in Sources */,

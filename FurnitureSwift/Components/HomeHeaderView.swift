@@ -14,6 +14,7 @@ struct HomeHeaderView: View {
         VStack(alignment: .leading) {
             HStack {
                 Image(systemName: "location.north.fill")
+                    .resizable()
                     .frame(width: 24, height: 24)
                 
                 Text("Sanghai, China")
@@ -22,7 +23,9 @@ struct HomeHeaderView: View {
                 
                 Spacer()
                 
-                NavigationLink(destination: Text("")) {
+                NavigationLink(
+                    destination: CartView().environmentObject(cartManager)
+                ) {
                     CartButtonView(numberOfProducts: cartManager.products.count)
                 }
             }

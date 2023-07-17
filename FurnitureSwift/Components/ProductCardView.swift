@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ProductCardView: View {
-    @StateObject var cartManager = CartManager()
+    @EnvironmentObject var cartManager: CartManager
     var product: Product
     
     let bounds = UIScreen.main.bounds
@@ -33,7 +33,7 @@ struct ProductCardView: View {
                 
                 Spacer().frame(height: 4)
                 
-                Text("$ \(String(format: "%.2f", product.price))")
+                Text("$\(String(format: "%.2f", product.price))")
                     .bold()
             }
             .padding(8)
